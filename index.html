@@ -187,7 +187,7 @@
 		</div>
 
 		<!-- Grid de Tarjetas (Cards) -->
-		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
+		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-8">
 
 			<!-- Card 1 -->
 			<div
@@ -345,16 +345,670 @@
 		</div>
 	</section>
 
+	<!-- SECCIÓN ELIGE TU RITMO (PRICING) -->
+	<section class="max-w-7xl mx-auto py-16 px-4 md:px-10">
+		<!-- Encabezado de Membresías -->
+		<div class="flex flex-col md:flex-row justify-between items-end">
+			<div>
+				<h2 class="titles-font text-5xl md:text-7xl font-black uppercase ">
+					Elige <br> <span class="text-red-600">tu ritmo.</span>
+				</h2>
+			</div>
+			<div class="hidden md:block text-right max-w-xs">
+				<p class="text-gray-500 font-medium leading-tight">
+					La membresía ideal para ti. Sin cargos ocultos, sin letra chica.
+				</p>
+			</div>
+		</div>
+
+		<!-- Selectores de Categoría -->
+		<div class="flex flex-wrap gap-4 mb-10">
+			<button class="px-8 py-2 rounded-full border border-gray-300 text-gray-400 font-bold uppercase text-xs tracking-widest hover:border-black hover:text-black transition-all">
+				Estudiantes
+			</button>
+			<button class="px-8 py-2 rounded-full bg-black text-white font-bold uppercase text-xs tracking-widest shadow-lg">
+				En Pareja
+			</button>
+			<button class="px-8 py-2 rounded-full border border-gray-300 text-gray-400 font-bold uppercase text-xs tracking-widest hover:border-black hover:text-black transition-all">
+				Individual
+			</button>
+		</div>
+
+		<!-- Card Principal Destacada -->
+		<div class="relative bg-black rounded-[3rem] overflow-hidden flex items-center p-8 md:p-20 shadow-2xl">
+			<!-- Fondo con Imagen y Overlay -->
+			<div class="absolute max-w-10/12 inset-0 z-0">
+				<img src="/webpage/assets/gallery-main.png" alt="Gym Background" class="w-full h-full object-cover opacity-40">
+				<div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+			</div>
+
+			<div class="relative z-10 w-full flex flex-col md:flex-row justify-between items-center md:items-end gap-12">
+				<!-- Lado Izquierdo: Precio y Título -->
+				<div class="w-full md:w-2/3">
+					<span class="text-red-600 text-xs font-black tracking-[0.2em] uppercase mb-4 block">
+						// Más Popular
+					</span>
+					<h3 class="titles-font text-white text-7xl md:text-9xl uppercase leading-none">
+						En Pareja
+					</h3>
+					
+					<div class="flex items-start text-white mt-6">
+						<span class="text-3xl font-black mt-4">$</span>
+						<span class="titles-font text-[8rem] md:text-[11rem] leading-none">1,200</span>
+						<div class="ml-4 mb-6 self-end">
+							<p class="text-gray-400 font-bold uppercase text-sm tracking-tighter">MXN /mes</p>
+						</div>
+					</div>
+
+					<!-- Botones de Acción -->
+					<div class="flex flex-wrap gap-4 mt-8">
+						<button class="bg-red-600 hover:bg-red-700 text-white font-black px-10 py-4 rounded-full uppercase text-sm flex items-center transition-all transform hover:scale-105">
+							Elegir Plan <i class="fa-solid fa-arrow-right ml-3"></i>
+						</button>
+						<button class="border border-white/30 hover:bg-white/10 text-white font-black px-10 py-4 rounded-full uppercase text-sm transition-all">
+							Hablar por WhatsApp
+						</button>
+					</div>
+				</div>
+
+				<!-- Lado Derecho: Beneficios -->
+				<div class="w-full md:w-1/3">
+					<ul class="space-y-5">
+						<li class="flex items-center text-white font-bold uppercase text-xs tracking-wider">
+							<span class="w-1.5 h-1.5 bg-red-600 rounded-full mr-4 shadow-[0_0_8px_#dc2626]"></span>
+							Acceso completo para 2
+						</li>
+						<li class="flex items-center text-white font-bold uppercase text-xs tracking-wider">
+							<span class="w-1.5 h-1.5 bg-red-600 rounded-full mr-4 shadow-[0_0_8px_#dc2626]"></span>
+							Uso de todas las áreas
+						</li>
+						<li class="flex items-center text-white font-bold uppercase text-xs tracking-wider">
+							<span class="w-1.5 h-1.5 bg-red-600 rounded-full mr-4 shadow-[0_0_8px_#dc2626]"></span>
+							Instalaciones climatizadas
+						</li>
+						<li class="flex items-center text-white font-bold uppercase text-xs tracking-wider">
+							<span class="w-1.5 h-1.5 bg-red-600 rounded-full mr-4 shadow-[0_0_8px_#dc2626]"></span>
+							Horarios amplios
+						</li>
+						<li class="flex items-center text-white font-bold uppercase text-xs tracking-wider">
+							<span class="w-1.5 h-1.5 bg-red-600 rounded-full mr-4 shadow-[0_0_8px_#dc2626]"></span>
+							Ahorro vs dos individuales
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer de Planes (Cards pequeñas inferiores) -->
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+			<!-- Card En Pareja (Resumen) -->
+			<div class="bg-white rounded-[2.5rem] p-8 md:p-12 flex justify-between items-center shadow-sm border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer group">
+				<div>
+					<p class="text-gray-400 font-black uppercase text-[10px] tracking-widest mb-1">Más Popular</p>
+					<h4 class="titles-font text-4xl md:text-5xl uppercase leading-none">En Pareja</h4>
+				</div>
+				<div class="flex items-center gap-6">
+					<div class="text-right">
+						<span class="titles-font text-4xl md:text-5xl leading-none">$1,200</span>
+						<p class="text-[10px] text-gray-400 font-black uppercase">MXN /mes</p>
+					</div>
+					<div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center group-hover:bg-red-600 transition-colors">
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+
+			<!-- Card Individual (Resumen) -->
+			<div class="bg-white rounded-[2.5rem] p-8 md:p-12 flex justify-between items-center shadow-sm border border-gray-100 hover:shadow-xl transition-shadow cursor-pointer group">
+				<div>
+					<p class="text-gray-400 font-black uppercase text-[10px] tracking-widest mb-1">Mensualidad</p>
+					<h4 class="titles-font text-4xl md:text-5xl uppercase leading-none">Individual</h4>
+				</div>
+				<div class="flex items-center gap-6">
+					<div class="text-right">
+						<span class="titles-font text-4xl md:text-5xl leading-none">$700</span>
+						<p class="text-[10px] text-gray-400 font-black uppercase">MXN /mes</p>
+					</div>
+					<div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center group-hover:bg-red-600 transition-colors">
+						<i class="fa-solid fa-arrow-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCIÓN HEAD COACH / LA FUERZA NO SE IMPROVISA -->
+	<section class="max-w-7xl mx-auto py-20 px-4 flex flex-col md:flex-row items-center gap-16">
+		
+		<!-- Lado Izquierdo: Texto -->
+		<div class="w-full md:w-1/2">
+			<h2 class="titles-font text-5xl md:text-6xl font-black uppercase leading-[0.95] mb-8">
+				La fuerza no se <br> 
+				improvisa. <br>
+				<span class="text-red-600">Se construye.</span>
+			</h2>
+			
+			<div class="flex items-start gap-4">
+				<p class="text-gray-500 text-lg md:text-xl font-medium leading-relaxed max-w-md">
+					Constancia, enfoque y disciplina. Cada entrenamiento es una inversión en ti. 
+					Aquí no vienes a entrenar por entrenar 
+					<span class="inline-block w-8 h-[1px] bg-gray-400 align-middle mx-1"></span> 
+					vienes a hacer que cada serie tenga un propósito.
+				</p>
+			</div>
+		</div>
+
+		<!-- Lado Derecho: Imagen del Coach con Overlays -->
+		<div class="w-full md:w-1/2">
+			<div class="relative rounded-[3rem] overflow-hidden shadow-2xl aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
+				<!-- Imagen del Coach -->
+				<img src="/webpage/assets/_MG_4394.png" alt="Head Coach" class="w-full h-full object-cover">
+				
+				<!-- Overlay Oscuro Suave -->
+				<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+
+				<!-- Texto Superior Izquierda -->
+				<div class="absolute top-8 left-8">
+					<p class="text-red-600 font-black uppercase text-[10px] tracking-[0.3em] mb-1">Head Coach</p>
+					<h3 class="titles-font text-white text-2xl md:text-3xl uppercase leading-none">
+						Resiliencia. Técnica.<br>Progreso.
+					</h3>
+				</div>
+
+				<!-- Texto Inferior Derecha (Años / Comunidad) -->
+				<div class="absolute bottom-8 right-8 text-right text-white">
+					<div class="flex items-end justify-end leading-none">
+						<span class="titles-font text-7xl md:text-8xl">08</span>
+					</div>
+					<div class="flex items-center justify-end gap-2 mt-[-5px]">
+						<p class="uppercase font-black text-[9px] tracking-[0.3em]">Años</p>
+						<span class="w-1 h-1 bg-red-600 rounded-full"></span>
+						<p class="uppercase font-black text-[9px] tracking-[0.3em]">Comunidad</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- SECCIÓN DETRÁS DE CADA AVANCE (COACHES) -->
+	<section class="max-w-7xl mx-auto mt-20 mb-20">
+		<div class="bg-black text-white rounded-[4rem] p-12 md:p-24 overflow-hidden">
+			
+			<!-- Encabezado de Sección -->
+			<div class="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">
+				<div class="w-full md:w-1/2">
+					<h2 class="titles-font text-5xl md:text-7xl uppercase leading-[0.9] tracking-tighter">
+						Detrás de <br> 
+						cada avance <br> 
+						<span class="text-red-600">un coach.</span>
+					</h2>
+				</div>
+				<div class="w-full md:w-1/3">
+					<p class="text-gray-400 font-medium text-sm md:text-base leading-relaxed">
+						Técnica correcta, resultados reales, cero lesiones. Entrena guiado por coaches certificados que van en serio, igual que tú.
+					</p>
+				</div>
+			</div>
+
+			<!-- Grid de Coaches -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-1 md:gap-4">
+				
+				<!-- Coach 1 -->
+				<div class="relative group overflow-hidden cursor-pointer">
+					<div class="aspect-[4/5] overflow-hidden">
+						<img src="/webpage/assets/entrenador.jpg" alt="Coach Principal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+					</div>
+					<!-- Overlay de información -->
+					<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+					<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+						<div>
+							<h3 class="titles-font text-2xl uppercase italic leading-none">Coach Principal</h3>
+							<p class="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em] mt-2">Fuerza · Hipertrofia</p>
+						</div>
+						<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+							<i class="fa-solid fa-arrow-right text-xs"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coach 2 -->
+				<div class="relative group overflow-hidden cursor-pointer">
+					<div class="aspect-[4/5] overflow-hidden">
+						<img src="/webpage/assets/entrenamiento.jpg" alt="Coach Funcional" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+					</div>
+					<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+					<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+						<div>
+							<h3 class="titles-font text-2xl uppercase italic leading-none">Coach Funcional</h3>
+							<p class="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em] mt-2">Movilidad · Técnica</p>
+						</div>
+						<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+							<i class="fa-solid fa-arrow-right text-xs"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Coach 3 -->
+				<div class="relative group overflow-hidden cursor-pointer">
+					<div class="aspect-[4/5] overflow-hidden">
+						<img src="/webpage/assets/_MG_4720.jpg" alt="Coach Cardio" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+					</div>
+					<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+					<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+						<div>
+							<h3 class="titles-font text-2xl uppercase italic leading-none">Coach Cardio</h3>
+							<p class="text-[10px] text-gray-400 font-black uppercase tracking-[0.2em] mt-2">Resistencia · Spin</p>
+						</div>
+						<div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)]">
+							<i class="fa-solid fa-arrow-right text-xs"></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCIÓN GALERÍA (ASÍ SE VIVE ENTRENAR AQUÍ) -->
+	<section class="max-w-7xl mx-auto py-20 px-4">
+		
+		<!-- Encabezado -->
+		<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
+			<h2 class="titles-font text-5xl md:text-7xl font-black uppercase leading-[0.9] tracking-tighter">
+				Así se vive <br> 
+				entrenar <br> 
+				<span class="text-gray-900">Aquí.</span>
+			</h2>
+			<div class="max-w-xs">
+				<p class="text-gray-500 font-medium text-sm leading-tight italic">
+					Cada detalle está pensado para que entrenes en un entorno a la altura de tus metas.
+				</p>
+			</div>
+		</div>
+
+		<!-- Grid de Galería -->
+		<div class="space-y-4">
+			
+			<!-- Fila Superior (Grande + Vertical) -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+				<!-- Imagen Horizontal Principal (2/3 del ancho) -->
+				<div class="md:col-span-2 relative rounded-3xl overflow-hidden group h-[400px] md:h-[500px]">
+					<img src="/webpage/assets/gallery-main.png" alt="Zona Cardio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+					<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+					<!-- Labels -->
+					<div class="absolute top-6 left-6">
+						<span class="bg-black/30 backdrop-blur-sm text-white text-[8px] font-black uppercase tracking-[0.3em] px-3 py-1 rounded-full border border-white/10">Zona · Cardio</span>
+					</div>
+					<!-- Texto Inferior -->
+					<div class="absolute bottom-10 left-10">
+						<h3 class="titles-font text-white text-4xl md:text-6xl uppercase leading-none italic mb-2">
+							Techos <br> Hexagonales.
+						</h3>
+						<p class="titles-font text-red-600 text-3xl md:text-5xl uppercase leading-none italic">Ambiente sin igual.</p>
+					</div>
+				</div>
+
+				<!-- Imagen Vertical (1/3 del ancho) -->
+				<div class="relative rounded-3xl overflow-hidden group h-[400px] md:h-[500px]">
+					<img src="/webpage/assets/entrenamiento.jpg" alt="Coaching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+					<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+					<div class="absolute top-6 left-6">
+						<span class="bg-black/30 backdrop-blur-sm text-white text-[8px] font-black uppercase tracking-[0.3em] px-3 py-1 rounded-full border border-white/10">1:1 · Coaching</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fila Inferior (3 Columnas Iguales) -->
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+				<!-- Imagen 1 -->
+				<div class="relative rounded-3xl overflow-hidden group h-[300px]">
+					<img src="/webpage/assets/comunidad.jpeg" alt="Zona Spin" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+					<div class="absolute top-6 left-6">
+						<span class="bg-black/30 backdrop-blur-sm text-white text-[8px] font-black uppercase tracking-[0.3em] px-3 py-1 rounded-full border border-white/10">Zona · Spin</span>
+					</div>
+				</div>
+
+				<!-- Box Rojo (Suplementos) -->
+				<div class="bg-red-600 rounded-3xl p-10 flex flex-col justify-end h-[300px] relative overflow-hidden group">
+					<!-- Elementos decorativos de fondo opcionales -->
+					<div class="absolute -right-10 -top-10 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700"></div>
+					
+					<div class="relative z-10">
+						<span class="text-white/60 text-[8px] font-black uppercase tracking-[0.3em] mb-4 block">Nuevo · Suplementos</span>
+						<h3 class="titles-font text-white text-3xl md:text-4xl uppercase leading-tight italic mb-4">
+							Proteína, <br> Creatina, <br> Pre-Entreno.
+						</h3>
+						<p class="text-white/80 text-[10px] font-bold uppercase tracking-wider">Disponibles en recepción.</p>
+					</div>
+				</div>
+
+				<!-- Imagen 2 (Luces Hex) -->
+				<div class="relative rounded-3xl overflow-hidden group h-[300px]">
+					<img src="/webpage/assets/hero-gym.png" alt="Hex Lights" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+					<div class="absolute top-6 left-6">
+						<span class="bg-black/30 backdrop-blur-sm text-white text-[8px] font-black uppercase tracking-[0.3em] px-3 py-1 rounded-full border border-white/10">Hex · Lights</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- SECCIÓN TESTIMONIOS (REVIEWS) -->
+	<section class="max-w-7xl mx-auto py-24 px-4">
+		
+		<!-- Encabezado y Métricas -->
+		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+			<!-- Título -->
+			<div class="w-full md:w-1/2">
+				<span class="text-red-600 font-black uppercase text-[10px] tracking-[0.3em] mb-4 block">
+					// Voces
+				</span>
+				<h2 class="titles-font text-6xl md:text-8xl uppercase leading-[0.85] tracking-tighter">
+					Lo que dice <br> el team.
+				</h2>
+			</div>
+
+			<!-- Grid de Métricas -->
+			<div class="w-full md:w-auto grid grid-cols-3 gap-8 md:gap-16 border-t border-gray-100 pt-8 md:border-none md:pt-0">
+				<div class="text-center md:text-left">
+					<p class="titles-font text-4xl md:text-5xl leading-none">+3,500</p>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">Socios activos</p>
+				</div>
+				<div class="text-center md:text-left">
+					<p class="titles-font text-4xl md:text-5xl leading-none">98%</p>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">Renueva su plan</p>
+				</div>
+				<div class="text-center md:text-left">
+					<p class="titles-font text-4xl md:text-5xl leading-none">4.9</p>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">En reseñas</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Grid de Testimonios -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-20 relative">
+			<!-- Línea decorativa superior -->
+			<div class="hidden md:block absolute -top-10 left-0 right-0 h-[1px] bg-gray-100"></div>
+
+			<!-- Review 1 -->
+			<div class="flex flex-col">
+				<div class="mb-6">
+					<i class="fa-solid fa-quote-left text-red-600 text-2xl"></i>
+				</div>
+				<p class="text-gray-600 text-sm md:text-base font-medium leading-relaxed mb-8">
+					Aquí sí te exigen. Cambié en 3 meses lo que no cambié en un año. Los coaches están pendientes de tu técnica en todo momento.
+				</p>
+				<div class="mt-auto">
+					<h4 class="titles-font text-lg uppercase leading-none">Ana M.</h4>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">Socia · Campeche</p>
+				</div>
+			</div>
+
+			<!-- Review 2 -->
+			<div class="flex flex-col">
+				<div class="mb-6">
+					<i class="fa-solid fa-quote-left text-red-600 text-2xl"></i>
+				</div>
+				<p class="text-gray-600 text-sm md:text-base font-medium leading-relaxed mb-8">
+					Coaches en serio, maquinaria completa y el clima al 100%. Vale cada peso la inversión. La mejor decisión para mi salud.
+				</p>
+				<div class="mt-auto">
+					<h4 class="titles-font text-lg uppercase leading-none">Luis R.</h4>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">Socio · 2 Años</p>
+				</div>
+			</div>
+
+			<!-- Review 3 -->
+			<div class="flex flex-col">
+				<div class="mb-6">
+					<i class="fa-solid fa-quote-left text-red-600 text-2xl"></i>
+				</div>
+				<p class="text-gray-600 text-sm md:text-base font-medium leading-relaxed mb-8">
+					La energía del team es otro nivel. Se te contagian las ganas de entrenar apenas entras. Comunidad real y motivadora.
+				</p>
+				<div class="mt-auto">
+					<h4 class="titles-font text-lg uppercase leading-none">Karla T.</h4>
+					<p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mt-2">Socia · Plan Pareja</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECCIÓN FAQ (DUDAS RÁPIDAS) -->
+	<section class="max-w-7xl mx-auto py-24 px-4 flex flex-col md:flex-row gap-12 md:gap-24">
+		
+		<!-- Lado Izquierdo: Título -->
+		<div class="w-full md:w-1/3">
+			<span class="text-red-600 font-black uppercase text-[10px] tracking-[0.3em] mb-4 block">
+				// FAQ
+			</span>
+			<h2 class="titles-font text-6xl md:text-8xl uppercase leading-[0.85] tracking-tighter mb-8">
+				Dudas <br> rápidas.
+			</h2>
+			<p class="text-gray-400 text-sm font-medium leading-relaxed max-w-[250px]">
+				¿No ves tu pregunta? Escríbenos por WhatsApp y te contestamos ahora.
+			</p>
+		</div>
+
+		<!-- Lado Derecho: Acordeón -->
+		<div class="w-full md:w-2/3 border-t border-gray-200">
+			
+			<!-- Pregunta 1 -->
+			<details class="group border-b border-gray-200">
+				<summary class="flex items-center py-8 cursor-pointer list-none">
+					<!-- Icono Triángulo Izquierda -->
+					<i class="fa-solid fa-caret-right text-[10px] text-black transition-transform group-open:rotate-90"></i>
+					
+					<!-- Texto de la Pregunta -->
+					<h3 class="titles-font text-xl md:text-3xl uppercase text-center flex-grow px-4 transition-colors group-hover:text-red-600">
+						¿Necesito experiencia previa?
+					</h3>
+					
+					<!-- Icono Plus Derecha -->
+					<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center transition-all group-open:bg-black group-open:text-white">
+						<i class="fa-solid fa-plus text-[10px] transition-transform group-open:rotate-45"></i>
+					</div>
+				</summary>
+				<div class="pb-8 px-8 text-gray-500 font-medium text-center md:text-left italic">
+					Absolutamente no. Nuestros coaches certificados te guiarán desde el primer día, adaptando cada rutina a tu nivel actual de condición física.
+				</div>
+			</details>
+
+			<!-- Pregunta 2 -->
+			<details class="group border-b border-gray-200">
+				<summary class="flex items-center py-8 cursor-pointer list-none">
+					<i class="fa-solid fa-caret-right text-[10px] text-black transition-transform group-open:rotate-90"></i>
+					<h3 class="titles-font text-xl md:text-3xl uppercase text-center flex-grow px-4 transition-colors group-hover:text-red-600">
+						¿Puedo probar antes de inscribirme?
+					</h3>
+					<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center transition-all group-open:bg-black group-open:text-white">
+						<i class="fa-solid fa-plus text-[10px] transition-transform group-open:rotate-45"></i>
+					</div>
+				</summary>
+				<div class="pb-8 px-8 text-gray-500 font-medium text-center md:text-left italic">
+					¡Claro! Ofrecemos un Day Pass para que conozcas las instalaciones, el ambiente y a nuestros coaches antes de tomar una decisión.
+				</div>
+			</details>
+
+			<!-- Pregunta 3 -->
+			<details class="group border-b border-gray-200">
+				<summary class="flex items-center py-8 cursor-pointer list-none">
+					<i class="fa-solid fa-caret-right text-[10px] text-black transition-transform group-open:rotate-90"></i>
+					<h3 class="titles-font text-xl md:text-3xl uppercase text-center flex-grow px-4 transition-colors group-hover:text-red-600">
+						¿Tienen horarios amplios?
+					</h3>
+					<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center transition-all group-open:bg-black group-open:text-white">
+						<i class="fa-solid fa-plus text-[10px] transition-transform group-open:rotate-45"></i>
+					</div>
+				</summary>
+				<div class="pb-8 px-8 text-gray-500 font-medium text-center md:text-left italic">
+					Contamos con servicio desde muy temprano hasta la noche para que el trabajo o el estudio no sean una excusa para no entrenar.
+				</div>
+			</details>
+
+			<!-- Pregunta 4 -->
+			<details class="group border-b border-gray-200">
+				<summary class="flex items-center py-8 cursor-pointer list-none">
+					<i class="fa-solid fa-caret-right text-[10px] text-black transition-transform group-open:rotate-90"></i>
+					<h3 class="titles-font text-xl md:text-3xl uppercase text-center flex-grow px-4 transition-colors group-hover:text-red-600">
+						¿Venden suplementos?
+					</h3>
+					<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center transition-all group-open:bg-black group-open:text-white">
+						<i class="fa-solid fa-plus text-[10px] transition-transform group-open:rotate-45"></i>
+					</div>
+				</summary>
+				<div class="pb-8 px-8 text-gray-500 font-medium text-center md:text-left italic">
+					Sí, en nuestra recepción encontrarás una selección curada de proteínas, creatinas y pre-entrenos de las mejores marcas.
+				</div>
+			</details>
+
+			<!-- Pregunta 5 -->
+			<details class="group border-b border-gray-200">
+				<summary class="flex items-center py-8 cursor-pointer list-none">
+					<i class="fa-solid fa-caret-right text-[10px] text-black transition-transform group-open:rotate-90"></i>
+					<h3 class="titles-font text-xl md:text-3xl uppercase text-center flex-grow px-4 transition-colors group-hover:text-red-600">
+						¿Hay descuentos para estudiantes?
+					</h3>
+					<div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center transition-all group-open:bg-black group-open:text-white">
+						<i class="fa-solid fa-plus text-[10px] transition-transform group-open:rotate-45"></i>
+					</div>
+				</summary>
+				<div class="pb-8 px-8 text-gray-500 font-medium text-center md:text-left italic">
+					Contamos con un plan especial para estudiantes presentando una credencial vigente. ¡Pregunta en recepción por los detalles!
+				</div>
+			</details>
+
+		</div>
+	</section>
+
+	<!-- CONTENEDOR MAESTRO OSCURO (CTA + FOOTER) -->
+	<!-- Esta sección ocupa el 100% del ancho de la ventana, anulando el padding del body -->
+	<section class="-mx-8 -mb-8"><div class="bg-black text-white rounded-t-[4rem] relative overflow-hidden shadow-2xl">
+			
+			<!-- IMAGEN DE FONDO QUE CUBRE TODO EL CONTENEDOR -->
+			<div class="absolute inset-0 z-0 opacity-40">
+				<img src="/webpage/assets/hero-back.png" 
+					 alt="Gym Background" 
+					 class="w-full h-full object-cover object-center">
+				<!-- Gradiente para que el footer sea legible -->
+				<div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black"></div>
+			</div>
+
+			<!-- LOGO GIGANTE DE FONDO (Ghost Text) -->
+			<div class="absolute inset-x-0 bottom-20 flex justify-center opacity-[0.03] pointer-events-none select-none z-0">
+				<h1 class="logo-font text-[15rem] md:text-[28rem] leading-none tracking-tighter">WEXODUS</h1>
+			</div>
+
+			<!-- CONTENIDO 1: HOY DECIDES (CTA) -->
+			<div class="relative z-10 p-12 md:p-24 min-h-[600px] flex flex-col justify-center">
+				<span class="text-red-600 font-black uppercase text-[10px] tracking-[0.4em] mb-8 block italic">
+					// TU TURNO
+				</span>
+				
+				<div class="relative">
+					<h2 class="titles-font text-7xl md:text-[13rem] uppercase leading-[0.8] tracking-tighter italic mb-10">
+						Hoy <br> 
+						decides<span class="inline-block w-6 h-6 md:w-14 md:h-14 bg-red-600 ml-4 mb-2"></span>
+					</h2>
+				</div>
+
+				<p class="text-gray-300 max-w-sm mb-12 font-medium text-sm md:text-base leading-relaxed italic">
+					Tu mejor versión no se construye sola. Entrena donde realmente se nota la diferencia. Da el paso que tu cuerpo está esperando.
+				</p>
+
+				<div class="flex flex-wrap gap-4">
+					<a href="#" class="bg-red-600 hover:bg-red-700 text-white font-black px-10 py-5 rounded-full uppercase text-xs tracking-widest flex items-center gap-3 transition-all transform hover:scale-105 shadow-[0_10px_30px_rgba(220,38,38,0.4)]">
+						Escríbenos por WhatsApp <i class="fa-solid fa-arrow-right"></i>
+					</a>
+					<a href="#" class="border border-white/30 hover:bg-white/10 text-white font-black px-10 py-5 rounded-full uppercase text-xs tracking-widest transition-all">
+						Ver planes
+					</a>
+				</div>
+			</div>
+
+			<!-- CONTENIDO 2: FOOTER (Dentro de la misma caja negra) -->
+			<footer class="relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md p-12 md:p-20">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-16 md:gap-8">
+					
+					<!-- Info Marca -->
+					<div class="space-y-8">
+						<img class="h-8" src="/webpage/assets/hexodus.png" alt="Hexodus Logo">
+						<p class="text-gray-400 text-[11px] font-medium leading-relaxed max-w-xs italic">
+							Hexodus Fitness Center — Campeche. Aquí no vienes a improvisar. Vienes a entrenar con estructura, técnica y resultados.
+						</p>
+						<div class="flex gap-3">
+							<a href="#" class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all text-[9px] font-bold">IG</a>
+							<a href="#" class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all text-[9px] font-bold">FB</a>
+							<a href="#" class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all text-[9px] font-bold">WA</a>
+							<a href="#" class="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-gray-400 hover:bg-red-600 hover:text-white transition-all text-[9px] font-bold">TT</a>
+						</div>
+					</div>
+
+					<!-- Menú -->
+					<div>
+						<h5 class="text-[9px] font-black uppercase tracking-[0.4em] text-red-600 mb-8 italic">// Menú</h5>
+						<ul class="space-y-4 text-[11px] font-black uppercase tracking-widest text-gray-200">
+							<li><a href="#" class="hover:text-red-500 transition-colors">Experiencia</a></li>
+							<li><a href="#" class="hover:text-red-500 transition-colors">Planes</a></li>
+							<li><a href="#" class="hover:text-red-500 transition-colors">Coaches</a></li>
+							<li><a href="#" class="hover:text-red-500 transition-colors">FAQ</a></li>
+						</ul>
+					</div>
+
+					<!-- Horario -->
+					<div>
+						<h5 class="text-[9px] font-black uppercase tracking-[0.4em] text-red-600 mb-8 italic">// Horario</h5>
+						<ul class="space-y-4 text-[11px] font-bold text-gray-400 uppercase tracking-widest">
+							<li>Lun-Vie <span class="text-white ml-2">6am—10pm</span></li>
+							<li>Sáb <span class="text-white ml-2">7am—3pm</span></li>
+							<li>Dom <span class="text-white ml-2">8am—1pm</span></li>
+						</ul>
+					</div>
+
+					<!-- Contacto -->
+					<div class="flex flex-col items-start">
+						<h5 class="text-[9px] font-black uppercase tracking-[0.4em] text-red-600 mb-8 italic">// Contacto</h5>
+						<p class="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2">Campeche, México</p>
+						<p class="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-8">hola@hexodus.mx</p>
+						<a href="#" class="bg-red-600 hover:bg-red-700 text-white font-black px-8 py-3 rounded-full uppercase text-[10px] tracking-widest flex items-center gap-2 transition-all">
+							WhatsApp <i class="fa-solid fa-arrow-right"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+	</section>
+
+	<!-- BOTÓN FLOTANTE (Opcional, fuera del contenedor) -->
+	<a id="whatsapp-btn" href="#" class="hidden fixed bottom-10 right-10 w-14 h-14 bg-red-600 text-white rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(220,38,38,0.5)] hover:scale-110 active:scale-95 transition-all z-[100]">
+		<i class="fa-brands fa-whatsapp text-2xl"></i>
+	</a>
+
 	<!-- JavaScript para el Menú -->
 	<script>
 		const btn = document.getElementById('menu-btn');
 		const menu = document.getElementById('mobile-menu');
-
 		btn.addEventListener('click', () => {
 			menu.classList.toggle('hidden');
 		});
+
+		// Mostrar/ocultar botón de WhatsApp al hacer scroll
+		const whatsappBtn = document.getElementById('whatsapp-btn');
+		const toggleWhatsapp = () => {
+			if (window.scrollY > 20) {
+				whatsappBtn.classList.remove('hidden');
+			} else {
+				whatsappBtn.classList.add('hidden');
+			}
+		};
+
+		// Inicial
+		toggleWhatsapp();
+
+		window.addEventListener('scroll', toggleWhatsapp);
 	</script>
-
 </body>
-
 </html>
