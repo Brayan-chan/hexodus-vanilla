@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hexodus Fitness Center</title>
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;700&display=swap');
+
+		.logo-font {
+			font-family: 'Orbitron', sans-serif;
+		}
+
+		.body-font {
+			font-family: 'Inter', sans-serif;
+		}
+
+		.hero-font {
+			font-family: 'Barlow Condensed', sans-serif;
+		}
+
+		.ticker-font {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.titles-font {
+			font-family: 'Montserrat', sans-serif;
+			/* Reducir el espacio entre letras */
+			letter-spacing: -0.04em;
+		}
+
+		.skew-box {
+			transform: skewX(-10deg);
+		}
+
+		.unskew {
+			transform: skewX(10deg);
+		}
+
+		/* Animación para el Scroll Infinito */
+		@keyframes scroll {
+			0% {
+				transform: translateX(0);
+			}
+
+			100% {
+				transform: translateX(-50%);
+			}
+		}
+
+		.animate-infinite-scroll {
+			display: flex;
+			width: max-content;
+			animation: scroll 20s linear infinite;
+		}
+
+		/* Pausar al pasar el mouse (opcional) */
+		.animate-infinite-scroll:hover {
+			animation-play-state: paused;
+		}
+	</style>
+</head>
+
+<body class="bg-gray-100 p-8 body-font">
+
+	<!-- Navbar Container -->
+	<nav
+		class="bg-[#1a1a1a] text-white px-6 py-3 rounded-2xl flex items-center justify-between max-w-7xl mx-auto shadow-2xl">
+
+		<!-- Logo -->
+		<div class="flex items-center space-x-1 logo-font text-2xl tracking-widest">
+			<img class="h-8" src="/webpage/assets/hexodus.png" alt="Hexodus Logo">
+		</div>
+
+		<!-- Desktop Menu / Icons & Button -->
+		<div class="flex items-center space-x-6">
+
+			<!-- Redes Sociales (Ocultas en móviles pequeños si prefieres) -->
+			<div class="hidden md:flex items-center space-x-4">
+				<a href="#" class="hover:text-red-500 transition-colors">
+					<i class="fa-brands fa-facebook-f text-xl"></i>
+				</a>
+				<a href="#" class="hover:text-red-500 transition-colors">
+					<i class="fa-brands fa-instagram text-xl"></i>
+				</a>
+			</div>
+
+			<!-- Botón de Inscripción -->
+			<a href="#"
+				class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full text-xs sm:text-sm uppercase transition-all transform hover:scale-105 active:scale-95">
+				!Inscríbete ya!
+			</a>
+
+			<!-- Icono Menú Hamburguesa -->
+			<button id="menu-btn" class="text-2xl focus:outline-none hover:text-red-500 transition-colors">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</div>
+	</nav>
+
+	<!-- Mobile Menu (Dropdown) -->
+	<div id="mobile-menu" class="hidden max-w-7xl mx-auto mt-2 bg-[#1a1a1a] rounded-xl p-4 text-white">
+		<ul class="space-y-4 text-center">
+			<li><a href="#" class="block hover:text-red-500">Inicio</a></li>
+			<li><a href="#" class="block hover:text-red-500">Servicios</a></li>
+			<li><a href="#" class="block hover:text-red-500">Contacto</a></li>
+			<div class="flex justify-center space-x-6 pt-2 border-t border-gray-700">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-instagram"></i>
+			</div>
+		</ul>
+	</div>
+
+	<div class="max-w-7xl mx-auto mt-8 space-y-12">
+		<!-- HERO SECTION -->
+		<section class="relative bg-black rounded-[2rem] overflow-hidden min-h-[550px] flex items-center">
+
+			<!-- Imagen de fondo (El hombre haciendo dominadas) -->
+			<!-- Nota: He usado un gradiente para asegurar que el texto sea legible y simular la imagen -->
+			<div class="absolute inset-0 z-0">
+				<img src="/webpage/assets/promoción.png" alt="Gym Hero" class="w-full h-full md:object-center">
+				<div class="absolute inset-0"></div>
+			</div>
+
+			<!-- Contenido del Hero -->
+			<div class="relative z-10 w-full top-40 px-8 py-4 md:px-16 py-12 flex flex-col justify-between h-full">
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- SECCIÓN LISTA INFINITA (TICKER) -->
+	<div class="bg-[#0a0a0a] rounded-[1rem] py-6 overflow-hidden relative max-w-7xl mx-auto mt-8">
+		<div class="animate-infinite-scroll flex items-center">
+
+			<!-- Grupo de Texto 1 -->
+			<div class="flex items-center ticker-font text-white text-lg md:text-xl font-black whitespace-nowrap">
+				<span class="mx-8 uppercase">Campeche</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Clima Controlado</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Coaches Certificados</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Maquinaria Completa</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Fuerza con Propósito</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+			</div>
+
+			<!-- Grupo de Texto 2 (Duplicado para el efecto infinito) -->
+			<div class="flex items-center ticker-font text-white text-lg md:text-xl font-black whitespace-nowrap">
+				<span class="mx-8 uppercase">Campeche</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Clima Controlado</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Coaches Certificados</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Maquinaria Completa</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+				<span class="mx-8 uppercase">Fuerza con Propósito</span>
+				<span class="w-2 h-2 bg-red-600"></span>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- SECCIÓN ¿QUÉ OBTIENES? -->
+	<section class="py-16 px-4 md:px-10">
+
+		<!-- Encabezado de Sección -->
+		<div class="text-center mb-12">
+			<h2 class="titles-font text-2xl md:text-6xl font-black uppercase">
+				¿Qué obtienes en <span class="text-red-600">Hexodus</span>?
+			</h2>
+			<p class="text-gray-500 mt-4 text-lg font-medium">Todo lo que necesitas para lograr tu mejor versión.</p>
+			<!-- Línea decorativa roja -->
+			<div class="flex justify-center mt-4">
+				<div class="w-12 h-1.5 bg-red-600 rounded-full"></div>
+				<div class="w-3 h-1.5 bg-red-600 rounded-full ml-1"></div>
+			</div>
+		</div>
+
+		<!-- Grid de Tarjetas (Cards) -->
+		<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
+
+			<!-- Card 1 -->
+			<div
+				class="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden flex flex-col items-center p-2 transition-transform hover:-translate-y-2 duration-300">
+				<img src="/webpage/assets/hero-gym.png"
+					class="w-full h-48 object-cover rounded-[2rem] mb-4" alt="Equipamiento">
+				<div class="text-center px-4 pb-6">
+					<h3 class="hero-font font-black uppercase text-base leading-tight">Equipamiento<br>Profesional</h3>
+					<div class="w-8 h-1 bg-red-600 mx-auto my-3"></div>
+					<p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Maquinaria para entrenar
+						con seguridad y eficiencia.</p>
+				</div>
+			</div>
+
+			<!-- Card 2 -->
+			<div
+				class="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden flex flex-col items-center p-2 transition-transform hover:-translate-y-2 duration-300">
+				<img src="/webpage/assets/entrenamiento.jpg"
+					class="w-full h-48 object-cover rounded-[2rem] mb-4" alt="Coaches">
+				<div class="text-center px-4 pb-6">
+					<h3 class="hero-font font-black uppercase text-base leading-tight">Coaches<br>Certificados</h3>
+					<div class="w-8 h-1 bg-red-600 mx-auto my-3"></div>
+					<p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Entrenadores que te guían y
+						acompañan en tu progreso.</p>
+				</div>
+			</div>
+
+			<!-- Card 3 (Destacada / Azul en la imagen original) -->
+			<div
+				class="bg-white rounded-[2.5rem] shadow-2xl border-2 overflow-hidden flex flex-col items-center p-2 transition-transform hover:-translate-y-2 duration-300">
+				<img src="/webpage/assets/gallery-main.png"
+					class="w-full h-48 object-cover rounded-[2rem] mb-4" alt="Clima">
+				<div class="text-center px-4 pb-6">
+					<h3 class="hero-font font-black uppercase text-base leading-tight">Clima<br>Controlado</h3>
+					<div class="w-8 h-1 bg-red-600 mx-auto my-3"></div>
+					<p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Entrena cómodo. Ambientes
+						ideales para tu máximo rendimiento.</p>
+				</div>
+			</div>
+
+			<!-- Card 4 -->
+			<div
+				class="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden flex flex-col items-center p-2 transition-transform hover:-translate-y-2 duration-300">
+				<img src="/webpage/assets/trainer-walter.jpg"
+					class="w-full h-48 object-cover rounded-[2rem] mb-4" alt="Suplementación">
+				<div class="text-center px-4 pb-6">
+					<h3 class="hero-font font-black uppercase text-base leading-tight">Suplementación</h3>
+					<div class="w-8 h-1 bg-red-600 mx-auto my-3"></div>
+					<p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Asesoría en suplementos
+						para optimizar tus resultados.</p>
+				</div>
+			</div>
+
+			<!-- Card 5 -->
+			<div
+				class="bg-white rounded-[2.5rem] shadow-2xl border border-gray-100 overflow-hidden flex flex-col items-center p-2 transition-transform hover:-translate-y-2 duration-300">
+				<img src="/webpage/assets/comunidad.jpeg"
+					class="w-full h-48 object-cover rounded-[2rem] mb-4" alt="Comunidad">
+				<div class="text-center px-4 pb-6">
+					<h3 class="hero-font font-black uppercase text-base leading-tight">Comunidad<br>Real</h3>
+					<div class="w-8 h-1 bg-red-600 mx-auto my-3"></div>
+					<p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Únete a una comunidad que
+						te motiva, te reta y celebra cada logro.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- LISTA DETALLADA (FILAS) -->
+		<div class="max-w-7xl mx-auto space-y-0">
+
+			<!-- Item 01 -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-between py-10 border-b border-gray-100 group cursor-pointer">
+				<div class="flex items-center space-x-6 md:space-x-12">
+					<span class="text-gray-200 text-xl font-bold">01</span>
+					<h4
+						class="hero-font text-2xl md:text-4xl font-black uppercase group-hover:text-red-600 transition-colors">
+						Equipamiento Profesional</h4>
+				</div>
+				<div class="flex items-center space-x-6 mt-4 md:mt-0">
+					<p class="text-gray-400 font-bold text-sm md:text-base">Pesas libres, máquinas modernas y zonas por
+						objetivo.</p>
+					<i
+						class="fa-solid fa-arrow-right text-red-600 text-xl transition-transform group-hover:translate-x-2"></i>
+				</div>
+			</div>
+
+			<!-- Item 02 -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-between py-10 border-b border-gray-100 group cursor-pointer">
+				<div class="flex items-center space-x-6 md:space-x-12">
+					<span class="text-gray-200 text-xl font-bold">02</span>
+					<h4
+						class="hero-font text-2xl md:text-4xl font-black uppercase group-hover:text-red-600 transition-colors">
+						Coaches Certificados</h4>
+				</div>
+				<div class="flex items-center space-x-6 mt-4 md:mt-0">
+					<p class="text-gray-400 font-bold text-sm md:text-base">Técnica correcta, resultados reales, cero
+						lesiones.</p>
+					<i
+						class="fa-solid fa-arrow-right text-red-600 text-xl transition-transform group-hover:translate-x-2"></i>
+				</div>
+			</div>
+
+			<!-- Item 03 -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-between py-10 border-b border-gray-100 group cursor-pointer">
+				<div class="flex items-center space-x-6 md:space-x-12">
+					<span class="text-gray-200 text-xl font-bold">03</span>
+					<h4
+						class="hero-font text-2xl md:text-4xl font-black uppercase group-hover:text-red-600 transition-colors">
+						Clima Controlado</h4>
+				</div>
+				<div class="flex items-center space-x-6 mt-4 md:mt-0">
+					<p class="text-gray-400 font-bold text-sm md:text-base">24° en todas las áreas. Todo el año.</p>
+					<i
+						class="fa-solid fa-arrow-right text-red-600 text-xl transition-transform group-hover:translate-x-2"></i>
+				</div>
+			</div>
+
+			<!-- Item 04 -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-between py-10 border-b border-gray-100 group cursor-pointer">
+				<div class="flex items-center space-x-6 md:space-x-12">
+					<span class="text-gray-200 text-xl font-bold">04</span>
+					<h4
+						class="hero-font text-2xl md:text-4xl font-black uppercase group-hover:text-red-600 transition-colors">
+						Suplementación</h4>
+				</div>
+				<div class="flex items-center space-x-6 mt-4 md:mt-0">
+					<p class="text-gray-400 font-bold text-sm md:text-base">Proteína, creatina, pre-entreno. Pregunta en
+						recepción.</p>
+					<i
+						class="fa-solid fa-arrow-right text-red-600 text-xl transition-transform group-hover:translate-x-2"></i>
+				</div>
+			</div>
+
+			<!-- Item 05 -->
+			<div
+				class="flex flex-col md:flex-row items-center justify-between py-10 border-b border-gray-100 group cursor-pointer">
+				<div class="flex items-center space-x-6 md:space-x-12">
+					<span class="text-gray-200 text-xl font-bold">05</span>
+					<h4
+						class="hero-font text-2xl md:text-4xl font-black uppercase group-hover:text-red-600 transition-colors">
+						Comunidad Real</h4>
+				</div>
+				<div class="flex items-center space-x-6 mt-4 md:mt-0">
+					<p class="text-gray-400 font-bold text-sm md:text-base">Gente que va en serio. La energía se
+						contagia.</p>
+					<i
+						class="fa-solid fa-arrow-right text-red-600 text-xl transition-transform group-hover:translate-x-2"></i>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- JavaScript para el Menú -->
+	<script>
+		const btn = document.getElementById('menu-btn');
+		const menu = document.getElementById('mobile-menu');
+
+		btn.addEventListener('click', () => {
+			menu.classList.toggle('hidden');
+		});
+	</script>
+
+</body>
+
+</html>
